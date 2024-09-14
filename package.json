@@ -4,17 +4,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc && refine build",
+    "build": "vite build",
+    "start": "vite",
     "dev": "refine dev",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "refine": "refine",
-    "start": "refine start"
+    "refine": "refine"
   },
   "dependencies": {
+    "@refinedev/antd": "^5.43.1",
     "@refinedev/cli": "^2.16.38",
     "@refinedev/core": "^4.54.1",
+    "@refinedev/simple-rest": "^5.0.8",
+    "axios": "^1.7.7",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
